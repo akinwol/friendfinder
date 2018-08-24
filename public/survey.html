@@ -1,0 +1,196 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Survey</title>
+    <!-- Latest compiled and minified CSS & JS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://code.jquery.com/jquery.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+    <div class="container">
+
+        <div class="row">
+            <div class="col-12">
+                <h1>Survey Questions </h1>
+                <hr>
+                <h2>About You </h2>
+                <form id="friend-form">
+                    <div class="survey-form">
+                        <label for="formGroupExampleInput">Name (required) </label>
+                        <input type="text" class="form-control" id="name" placeholder="Enter name here ">
+                    </div>
+                    <div class="survey-form">
+                        <label for="formGroupExampleInput2"> Link to photo image</label>
+                        <input type="text" class="form-control" id="photo-link" placeholder="place your URL here ">
+                    </div>
+                    <div class="card">
+                        <div class="card-header">
+                            <h3>Questions</h3>
+                        </div>
+                        <div class="card-body">
+                            <div class="survey-form">
+                                <label for="formGroupExampleInput2"> Question 1</label>
+                                <select class="questions form-control" id="q1">
+                                    <option selected>Open this select menu</option>
+                                    <option value="1">1 (Strongly Disagree)</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                    <option value="5">5 (Strongly Agree)</option>
+                                </select>
+                            </div>
+                            <hr>
+                            <div class="survey-form">
+                            
+                                <label for="formGroupExampleInput2"> Question 2</label>
+                                <select class="questions form-control" id="q2">
+                                    <option selected>Open this select menu</option>
+                                    <option value="1">1 (Strongly Disagree)</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                    <option value="5">5 (Strongly Agree)</option>
+                                </select>
+                            </div>
+                           <hr>
+                           <div class="survey-form">
+                            
+                                <label for="formGroupExampleInput2"> Question 3</label>
+                                <select class="questions form-control" id="q3">
+                                    <option selected>Open this select menu</option>
+                                    <option value="1">1 (Strongly Disagree)</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                    <option value="5">5 (Strongly Agree)</option>
+                                </select>
+                            </div>
+                           <hr>
+                           <div class="survey-form">
+                            
+                                <label for="formGroupExampleInput2"> Question 4</label>
+                                <select class="questions form-control" id="q4">
+                                    <option selected>Open this select menu</option>
+                                    <option value="1">1 (Strongly Disagree)</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                    <option value="5">5 (Strongly Agree)</option>
+                                </select>
+                            </div>
+                           <hr>
+                           <div class="survey-form">
+                            
+                                <label for="formGroupExampleInput2"> Question 5</label>
+                                <select class="questions form-control" id="q5">
+                                    <option selected>Open this select menu</option>
+                                    <option value="1">1 (Strongly Disagree)</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                    <option value="5">5 (Strongly Agree)</option>
+                                </select>
+                            </div>
+                           <hr>
+                           <div class="survey-form">
+                            
+                                <label for="formGroupExampleInput2"> Question 6</label>
+                                <select class="questions form-control" id="q6">
+                                    <option selected>Open this select menu</option>
+                                    <option value="1">1 (Strongly Disagree)</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                    <option value="5">5 (Strongly Agree)</option>
+                                </select>
+                            </div>
+                           <hr>
+
+                        </div>
+                    </div>
+
+                    <button type="submit" class="btn btn-primary submit" data-toggle="modal" data-target="#exampleModal" >Submit</button>
+                </form>
+
+
+            </div>
+            <!-- Button trigger modal -->
+<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+        Launch demo modal
+      </button>
+      
+      <!-- Modal -->
+      <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">Here is your match</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <div class="row">
+                  <div class="col-4">
+                        <img id="match-pic" src="" alt="Italian Trulli" style="width:100%">
+                  </div>
+
+              </div>
+          
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+              <button type="button" class="btn btn-primary">Save changes</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+        </div>
+
+    </div>
+
+
+</body>
+
+</html>
+
+<script type="text/javascript">
+    $(".submit").on("click", function (event) {
+        event.preventDefault();
+        var newFriend = {
+            name: $("#name").val().trim(),
+            photoLink: $("#photo-link").val().trim(),
+            scores: []
+        }
+        $(".questions").each(function () {
+            var score = $(this).val();
+            newFriend.scores.push(score);
+        });
+        console.log(newFriend)
+        $("#friend-form").each(function () {
+            this.reset();
+        });
+
+        $.post("/api/friends", newFriend)
+
+        var currentURL = window.location.origin;
+        $.ajax({
+            url: currentURL+"/api/match", method: "GET"
+        }).then(function(match){
+            console.log(match)
+            $("match-pick").attr('src', match[1])
+
+        });
+
+
+    });
+
+</script>
