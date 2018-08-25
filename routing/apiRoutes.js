@@ -28,7 +28,7 @@ module.exports = function (app) {
         var indexOfMin = allDiff.indexOf(Math.min.apply(Math, allDiff))
         // console.log(indexOfMin)
         console.log("NAME OF MATCH: ", surveyData.data[indexOfMin].name)
-        surveyData.pick.push(surveyData.data[indexOfMin].name, surveyData.data[indexOfMin].photoLink);
+        surveyData.pick = [surveyData.data[indexOfMin].name, surveyData.data[indexOfMin].photoLink];
         surveyData.data.push(req.body);
     });
     app.get("/api/match", function(req, res){

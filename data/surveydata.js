@@ -1,25 +1,25 @@
 
 var surveyData = [
-    {
-        name:"Test Name 1",
-        photoLink:"https://images.pexels.com/photos/220453/pexels-photo-220453.jpeg?auto=compress&cs=tinysrgb&h=350",
-        scores: [1,1,1,1,1,1]
-    },
-    {
-        name:"Test Name 2",
-        photoLink:"https://goo.gl/UCrwt5",
-        scores: [2,2,2,2,2,2]
-    },
-    {
-        name:"Test Name 3",
-        photoLink: "https://goo.gl/VCC4dJ",
-        scores: [3,3,3,3,3,3]
-    },
-    {
-        name:"Test Name 4",
-        photoLink: "https://goo.gl/uCk8zk",
-        scores: [4,4,4,4,4,4]
-    }
+    // {
+    //     name:"Test Name 1",
+    //     photoLink:"https://images.pexels.com/photos/220453/pexels-photo-220453.jpeg?auto=compress&cs=tinysrgb&h=350",
+    //     scores: [1,1,1,1,1,1]
+    // },
+    // {
+    //     name:"Test Name 2",
+    //     photoLink:"https://goo.gl/UCrwt5",
+    //     scores: [2,2,2,2,2,2]
+    // },
+    // {
+    //     name:"Test Name 3",
+    //     photoLink: "https://goo.gl/VCC4dJ",
+    //     scores: [3,3,3,3,3,3]
+    // },
+    // {
+    //     name:"Test Name 4",
+    //     photoLink: "https://goo.gl/uCk8zk",
+    //     scores: [4,4,4,4,4,4]
+    // }
   
 ];
 
@@ -79,9 +79,9 @@ surveyData.forEach(function(element){
     compare(newPost.scores, element.scores)
 });
 
-console.log(allDiff)
+// console.log(allDiff)
 
 // this will give you the index of the lowest number
 var indexOfMin = allDiff.indexOf(Math.min.apply(Math, allDiff))
-console.log(indexOfMin)
-console.log("Name of match: ", surveyData[indexOfMin].name)
+// console.log(indexOfMin)
+// console.log("Name of match: ", surveyData[indexOfMin].name)
