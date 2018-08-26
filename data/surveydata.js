@@ -1,10 +1,10 @@
 
 var surveyData = [
-    // {
-    //     name:"Test Name 1",
-    //     photoLink:"https://images.pexels.com/photos/220453/pexels-photo-220453.jpeg?auto=compress&cs=tinysrgb&h=350",
-    //     scores: [1,1,1,1,1,1]
-    // },
+    {
+        name:"Test Name 1",
+        photoLink:"https://goo.gl/UpYVCv",
+        scores: [1,1,1,1,1,1]
+    }
     // {
     //     name:"Test Name 2",
     //     photoLink:"https://goo.gl/UCrwt5",
@@ -25,10 +25,10 @@ var surveyData = [
 
 var match = []
 
-var newPost =   {
-    name:"Test Name 3",
-    scores: [2,2,7,10]
-}
+// var newPost =   {
+//     name:"Test Name 3",
+//     scores: [2,2,7,10]
+// }
 
 
 // module.exports = surveyData
@@ -76,7 +76,7 @@ surveyData.forEach(function(element){
     // console.log(element.score)
 // run the function for each index in the survey data 
 // function will store all the total diff into the all diff array 
-    compare(newPost.scores, element.scores)
+    // compare(newPost.scores, element.scores)
 });
 
 // console.log(allDiff)
