@@ -18,8 +18,8 @@
   },
   "homepage": "https://github.com/akinwol/friendfinder#readme",
   "dependencies": {
-    "body-parser": "^1.18.3",
-    "express": "^4.16.3",
+    "body-parser": "^1.20.1",
+    "express": "^4.18.2",
     "install": "^0.12.1",
     "npm": "^6.4.0",
     "path": "^0.12.7"
